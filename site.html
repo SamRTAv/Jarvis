@@ -1,16 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hostel 5 Network Link</title>
-</head>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace; /* Use a monospace font for a technical look */
+            background-color: #1e272e; /* Dark background */
+            color: #f0f0f0; /* Light text color */
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center the content */
+            min-height: 100vh; /* Ensure full viewport height */
+        }
+
+        h1 {
+            color: #66d9ef; /* Teal heading */
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block; /* Labels on their own line */
+            margin-bottom: 5px;
+            color: #a29bfe; /* Lighter purple */
+        }
+
+        select {
+            width: 300px; /* Adjust width as needed */
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #2d343e; /* Darker background for select */
+            color: #f0f0f0;
+            border: 1px solid #485460; /* Subtle border */
+            border-radius: 5px;
+            font-family: 'Roboto Mono', monospace;
+            appearance: none; /* remove default arrow */
+            -webkit-appearance: none; /* remove default arrow for Safari */
+            -moz-appearance: none; /* remove default arrow for Firefox */
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f0f0f0'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e"); /* add custom arrow */
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            padding-right: 30px; /* adjust padding to make space for arrow */
+        }
+
+        select:focus {
+            outline: none; /* Remove default focus outline */
+            border-color: #66d9ef; /* Highlight border on focus */
+            box-shadow: 0 0 5px rgba(102, 217, 239, 0.3); /* Add a subtle shadow */
+        }
+
+        option {
+            background-color: #2d343e; /* Darker background for options */
+        }
+
+        a {
+            color: #f0f0f0;
+            text-decoration: none;
+        }
+
+        /* Styling for the container to center content */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center horizontally */
+            width: 80%; /* Limit container width if needed */
+            max-width: 900px; /* Set a maximum width */
+            margin: 0 auto; /* Center the container on page */
+        }
+
+        /* Add a subtle glow effect on hover */
+        select:hover {
+            box-shadow: 0 0 10px rgba(102, 217, 239, 0.1);
+        }
+
+        /* Add some spacing below the last select */
+        select:last-of-type {
+            margin-bottom: 30px;
+        }
+
+        /* Add a footer or other elements as needed */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #7f8c8d; /* Slightly lighter text for footer */
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <h1>Hostel 5 Network Access</h1>
-    <p>
-        <a href="http://10.64.140.213">
-            Hostel 5 - Ground Floor - Middle Wing - Left Side
-        </a>
-    </p>
+    <div class="container">
+        <h1>H5 Wireless Washing Machine Connectivity</h1>
+
+        <label for="frontWing">Front Wing (Near Guard Office)</label>
+        <select name="frontWing" id="frontWing">
+            <option value="">Choose</option>
+            <option value="groundLeft">Ground Floor Left Side</option>
+            <option value="groundRight">Ground Floor Right Side</option>
+            <option value="firstLeft">First Floor Left Side</option>
+            <option value="firstRight">First Floor Right Side</option>
+            <option value="secondLeft">Second Floor Left Side</option>
+            <option value="secondRight">Second Floor Right Side</option>
+        </select>
+        <label for="middleWing">Middle Wing</label>
+        <select name="middleWing" id="middleWing">
+            <option value="">Choose</option>
+            <option value="groundLeft">Ground Floor Left Side</option>
+            <option value="groundRight">Ground Floor Right Side</option>
+            <option value="firstLeft">First Floor Left Side</option>
+            <option value="firstRight">First Floor Right Side</option>
+            <option value="secondLeft">Second Floor Left Side</option>
+            <option value="secondRight">Second Floor Right Side</option>
+        </select>
+        <label for="lastWing">Last wing</label>
+        <select name="lastWing" id="lastWing">
+            <option value="">Choose</option>
+            <option value="groundLeft">Ground Floor Left Side</option>
+            <option value="groundRight">Ground Floor Right Side</option>
+            <option value="firstLeft">First Floor Left Side</option>
+            <option value="firstRight">First Floor Right Side</option>
+            <option value="secondLeft">Second Floor Left Side</option>
+            <option value="secondRight">Second Floor Right Side</option>
+        </select>
+
+
+        </div>
+
+    <footer>
+        &copy; Made while 😎ing by Lokesh and Sameer
+    </footer>
+
+    <script>
+        const frontWingSelect = document.getElementById('frontWing');
+
+        frontWingSelect.addEventListener('change', function() {
+            const selectedValue = this.value;
+
+            switch (selectedValue) {
+                case 'groundLeft':
+                    window.location.href = 'https://www.google.co.in';
+                    break;
+                case 'groundRight':
+                    window.location.href = 'https://www.example.com'; // Example URL
+                    break;
+                case 'firstLeft':
+                    window.location.href = 'https://www.another-example.com'; // Example
+                    break;
+                case 'firstRight':
+                    window.location.href = 'https://www.example.com'; // Example URL
+                    break;
+                case 'secondLeft':
+                    window.location.href = 'https://www.another-example.com'; // Example
+                    break;
+                case 'secondRight':
+                    window.location.href = 'https://www.example.com'; // Example URL
+                    break;
+            }
+        });
+
+        // Add similar event listeners for other select elements:
+        const middleWingSelect = document.getElementById('middleWing');
+        middleWingSelect.addEventListener('change', function() {
+            const selectedValue = this.value;
+            switch (selectedValue) {
+                case 'groundLeft':
+                    window.location.href = 'https://www.google.co.in';
+                    break;
+                case 'groundRight':
+                    window.location.href = 'https://www.example.com'; // Example URL
+                    break;
+                case 'firstLeft':
+                    window.location.href = 'https://www.another-example.com'; // Example
+                    break;
+                case 'firstRight':
+                    window.location.href = 'https://www.example.com'; // Example URL
+                    break;
+                case 'secondLeft':
+                    window.location.href = 'https://www.another-example.com'; // Example
+                    break;
+                case 'secondRight':
+                    window.location.href = 'https://www.example.com'; // Example URL
+                    break;
+            }
+        });
+
+        const lastWingSelect = document.getElementById('lastWing');
+        lastWingSelect.addEventListener('change', function() {
+            const selectedValue = this.value;
+            switch (selectedValue) {
+                case 'groundLeft':
+                    window.location.href = 'https://www.google.co.in';
+                    break;
+                case 'groundRight':
+                    window.location.href = 'https://www.example.com'; // Example URL
+                    break;
+                case 'firstLeft':
+                    window.location.href = 'https://www.another-example.com'; // Example
+                    break;
+                case 'firstRight':
+                    window.location.href = 'https://www.example.com'; // Example URL
+                    break;
+                case 'secondLeft':
+                    window.location.href = 'https://www.another-example.com'; // Example
+                    break;
+                case 'secondRight':
+                    window.location.href = 'https://www.example.com'; // Example URL
+                    break;
+            }
+        });
+
+    </script>
 </body>
 </html>
