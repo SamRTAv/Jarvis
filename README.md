@@ -1,9 +1,9 @@
 # Jarvis
 ## For running the website
 ### Link - https://samrtav.github.io/Jarvis/site.html
-#### change Ip corresponding to the wing everytime you try connect the esp to the wifi in the site.html.
+#### Change Ip corresponding to the wing machine in site.hl everytime you try connect the esp to the wifi.
 
-### For calibrating 
+### For callibrating 
 #### Try changing ldrvalue > threshold & [ldrValue - secondread] according to the fluctuations in the washing machine led.
 ### Thank you
 
