@@ -4,7 +4,7 @@
 // Eduroam Wi-Fi credentials
 #define EAP_USERNAME "23b0430@iitb.ac.in"
 #define EAP_IDENTITY "23b0430@iitb.ac.in"
-#define EAP_PASSWORD "Moto@g62"
+#define EAP_PASSWORD "Your password"
 const char *ssid = "eduroam";
 
 // Washing Machine LDR Sensor
